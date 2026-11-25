@@ -1,0 +1,15 @@
+Raw rows read:            114
+Rejected (invalid):       1
+Duplicates removed:       4
+Clean rows kept:          109
+Refund rows:              5
+Uncategorised rows:       7
+Categorisation rate:      93.6%  (target: 90%+)
+
+Monthly totals (clean data):
+  2026-06: 16,688.00
+  2026-07: 16,888.00
+  2026-08: 16,888.00
+  2026-09: 22,838.00
+  2026-10: 17,958.00
+  2026-11: 17,578.00
