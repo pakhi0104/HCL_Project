@@ -1,15 +1,30 @@
-Raw rows read:            114
-Rejected (invalid):       1
-Duplicates removed:       4
-Clean rows kept:          109
-Refund rows:              5
-Uncategorised rows:       7
-Categorisation rate:      93.6%  (target: 90%+)
+DATA QUALITY REPORT
+========================================
+Rows in raw file:            114
+Rows rejected (invalid):     1
+   - Amount is missing or not a valid number: 1
+Duplicates removed:          4
+Descriptions fixed:          14
+Dates converted:             2
+Final clean rows:            109
+Uncategorised:               7 (6.4%)
+Refund entries:              5
 
-Monthly totals (clean data):
-  2026-06: 16,688.00
-  2026-07: 16,888.00
-  2026-08: 16,888.00
-  2026-09: 22,838.00
-  2026-10: 17,958.00
-  2026-11: 17,578.00
+Rows per category:
+   Bills           12
+   Education       2
+   Entertainment   10
+   Food            37
+   Health          3
+   Rent            6
+   Shopping        13
+   Travel          19
+   Uncategorised   7
+
+Monthly totals (refunds subtracted):
+   2026-06   Rs  16,688.00
+   2026-07   Rs  16,888.00
+   2026-08   Rs  16,888.00
+   2026-09   Rs  22,838.00
+   2026-10   Rs  17,958.00
+   2026-11   Rs  17,578.00

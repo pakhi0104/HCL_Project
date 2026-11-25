@@ -10,13 +10,17 @@ The data is deliberately a little messy, because the cleaning script
 
 Run:  python generate_data.py
 """
+
 import csv
 import random
 import calendar
 from datetime import date, timedelta
-random.seed(42)   
+
+random.seed(42)  
+
 MONTHS = [(2026, 6), (2026, 7), (2026, 8), (2026, 9), (2026, 10), (2026, 11)]
 LAST_DATE = date(2026, 11, 25)      # November is still running, so data stops here
+
 SHOPS = {
     "Swiggy": (150, 600),
     "Zomato": (150, 650),
@@ -35,66 +39,84 @@ SHOPS = {
     "Apollo Pharmacy": (150, 1200),
     "Udemy": (400, 1200),
 }
+
 UNKNOWN_SHOPS = [
     "Rahul Transfer", "Misc Cash Payment", "Ramesh Vendor", "Local Vendor",
     "UPI Payment 8842", "Gift Shop XYZ", "Cash Note",
 ]
+
 REFUNDS = ["Amazon Refund", "Flipkart Refund", "Swiggy Refund",
            "Uber Refund", "Myntra Refund"]
-rows = []  
+
+rows = []   # every expense is stored here as a small dictionary
+
 def add(d, description, amount):
     """Add one expense to the list."""
     rows.append({"date": d, "description": description,
                  "amount": amount, "odd_date": False})
+
 def last_day_of(year, month):
     """Last valid day of a month (November stops at 25)."""
     if (year, month) == (LAST_DATE.year, LAST_DATE.month):
         return LAST_DATE.day
     return calendar.monthrange(year, month)[1]
+
 def random_date():
     """A random valid date inside the 6 months."""
     year, month = random.choice(MONTHS)
     return date(year, month, random.randint(1, last_day_of(year, month)))
+
 def random_amount(low, high):
     """Random amount rounded to a multiple of 10."""
     return random.randint(low // 10, high // 10) * 10
+
 for year, month in MONTHS:
     last_day = last_day_of(year, month)
+
     add(date(year, month, 1), "House Rent", 8000)
     add(date(year, month, 7), "Netflix", 199)
     add(date(year, month, 12), "Jio Recharge", 299)
     add(date(year, month, 15), "Electricity Bill", random.randint(8, 22) * 100)
+
     count = 8 if month == 11 else 11
     for _ in range(count):
         shop = random.choice(list(SHOPS))
         low, high = SHOPS[shop]
         day = random.randint(1, last_day)
         add(date(year, month, day), shop, random_amount(low, high))
+
 for year, month in MONTHS[:-1]:
     last_day = calendar.monthrange(year, month)[1]
     last_date = date(year, month, last_day)
     add(last_date, "Zomato", random_amount(150, 600))
     add(last_date + timedelta(days=1), "Uber", random_amount(100, 500))
+
 for shop in UNKNOWN_SHOPS:
     add(random_date(), shop, random_amount(100, 1500))
+
 for text in REFUNDS:
     add(random_date(), text, -random_amount(300, 1500))
+
 rows.sort(key=lambda r: r["date"])
+
 messy_positions = random.sample(range(len(rows)), 6)
 for n, i in enumerate(messy_positions):
     text = rows[i]["description"]
     if n % 3 == 0:
-        rows[i]["description"] = text.upper()                 # SWIGGY
+        rows[i]["description"] = text.upper()                 
     elif n % 3 == 1:
-        rows[i]["description"] = "  " + text.lower() + "  "   # "  swiggy  "
+        rows[i]["description"] = "  " + text.lower() + "  "   
     else:
-        rows[i]["description"] = text.lower() + " "           # "swiggy "
+        rows[i]["description"] = text.lower() + " "          
 for i in random.sample(range(len(rows)), 2):
     rows[i]["odd_date"] = True
+
 for i in random.sample(range(len(rows)), 4):
     rows.append(dict(rows[i]))
+
 rows.append({"date": date(2026, 9, 18), "description": "Zomato",
              "amount": "", "odd_date": False})
+
 with open("expenses_raw.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["date", "description", "amount"])
@@ -106,3 +128,14 @@ with open("expenses_raw.csv", "w", newline="", encoding="utf-8") as f:
         writer.writerow([date_text, r["description"], r["amount"]])
 
 print("Done. expenses_raw.csv created with", len(rows), "rows.")
+
+# Monthly spending limit (fixed for the sample data) 
+MONTHLY_LIMIT = 18000
+
+with open("budget.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["month", "limit_amount"])
+    for year, month in MONTHS:
+        writer.writerow([f"{year}-{month:02d}", MONTHLY_LIMIT])
+
+print("Done. budget.csv created with", len(MONTHS), "monthly limits.")

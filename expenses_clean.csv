@@ -1,110 +1,110 @@
-date,description,amount,category,is_refund,year_month
-2026-06-01,House Rent,8000.0,Bills,False,2026-06
-2026-06-01,Starbucks,430.0,Food,False,2026-06
-2026-06-01,Zomato,200.0,Food,False,2026-06
-2026-06-07,Netflix,199.0,Entertainment,False,2026-06
-2026-06-08,Metro Recharge,270.0,Transport,False,2026-06
-2026-06-08,Uber,440.0,Transport,False,2026-06
-2026-06-08,Bookmyshow,820.0,Entertainment,False,2026-06
-2026-06-11,Bookmyshow,600.0,Entertainment,False,2026-06
-2026-06-12,Jio Recharge,299.0,Bills,False,2026-06
-2026-06-15,Electricity Bill,1800.0,Bills,False,2026-06
-2026-06-18,Swiggy,270.0,Food,False,2026-06
-2026-06-19,Dominos,520.0,Food,False,2026-06
-2026-06-19,Local Vendor,680.0,Uncategorised,False,2026-06
-2026-06-23,Gift Shop Xyz,250.0,Uncategorised,False,2026-06
-2026-06-24,Bigbasket,660.0,Groceries,False,2026-06
-2026-06-25,Swiggy,250.0,Food,False,2026-06
-2026-06-26,Metro Recharge,470.0,Transport,False,2026-06
-2026-06-30,Zomato,530.0,Food,False,2026-06
-2026-07-01,House Rent,8000.0,Bills,False,2026-07
-2026-07-01,Uber,370.0,Transport,False,2026-07
-2026-07-02,Dominos,670.0,Food,False,2026-07
-2026-07-03,Ramesh Vendor,960.0,Uncategorised,False,2026-07
-2026-07-03,Cash Note,180.0,Uncategorised,False,2026-07
-2026-07-04,Amazon,770.0,Shopping,False,2026-07
-2026-07-04,Myntra,1410.0,Shopping,False,2026-07
-2026-07-07,Netflix,199.0,Entertainment,False,2026-07
-2026-07-09,Flipkart Refund,-1150.0,Shopping,True,2026-07
-2026-07-12,Jio Recharge,299.0,Bills,False,2026-07
-2026-07-15,Electricity Bill,1000.0,Bills,False,2026-07
-2026-07-18,Dominos,430.0,Food,False,2026-07
-2026-07-19,Flipkart,1280.0,Shopping,False,2026-07
-2026-07-20,Flipkart,1650.0,Shopping,False,2026-07
-2026-07-24,Zomato,440.0,Food,False,2026-07
-2026-07-24,Uber Refund,-1490.0,Transport,True,2026-07
-2026-07-25,Ola,280.0,Transport,False,2026-07
-2026-07-28,Dominos,390.0,Food,False,2026-07
-2026-07-30,Starbucks,320.0,Food,False,2026-07
-2026-07-31,Uber,600.0,Transport,False,2026-07
-2026-07-31,Zomato,280.0,Food,False,2026-07
-2026-08-01,House Rent,8000.0,Bills,False,2026-08
-2026-08-01,Uber,440.0,Transport,False,2026-08
-2026-08-03,Amazon Refund,-950.0,Shopping,True,2026-08
-2026-08-07,Netflix,199.0,Entertainment,False,2026-08
-2026-08-08,Zomato,170.0,Food,False,2026-08
-2026-08-12,Jio Recharge,299.0,Bills,False,2026-08
-2026-08-12,Blinkit,650.0,Groceries,False,2026-08
-2026-08-13,Starbucks,280.0,Food,False,2026-08
-2026-08-13,Amazon,1670.0,Shopping,False,2026-08
-2026-08-15,Electricity Bill,2100.0,Bills,False,2026-08
-2026-08-15,Blinkit,680.0,Groceries,False,2026-08
-2026-08-18,Blinkit,510.0,Groceries,False,2026-08
-2026-08-20,Dominos,650.0,Food,False,2026-08
-2026-08-21,Apollo Pharmacy,610.0,Health,False,2026-08
-2026-08-22,Uber,290.0,Transport,False,2026-08
-2026-08-22,Ola,300.0,Transport,False,2026-08
-2026-08-30,Metro Recharge,400.0,Transport,False,2026-08
-2026-08-31,Zomato,590.0,Food,False,2026-08
-2026-09-01,House Rent,8000.0,Bills,False,2026-09
-2026-09-01,Uber,220.0,Transport,False,2026-09
-2026-09-03,Udemy,460.0,Education,False,2026-09
-2026-09-04,Misc Cash Payment,730.0,Uncategorised,False,2026-09
-2026-09-05,Apollo Pharmacy,480.0,Health,False,2026-09
-2026-09-05,Starbucks,400.0,Food,False,2026-09
-2026-09-07,Netflix,199.0,Entertainment,False,2026-09
-2026-09-07,Amazon,2850.0,Shopping,False,2026-09
-2026-09-07,Swiggy Refund,-990.0,Food,True,2026-09
-2026-09-08,Bigbasket,1770.0,Groceries,False,2026-09
-2026-09-08,Flipkart,1000.0,Shopping,False,2026-09
-2026-09-12,Jio Recharge,299.0,Bills,False,2026-09
-2026-09-15,Electricity Bill,900.0,Bills,False,2026-09
-2026-09-24,Metro Recharge,380.0,Transport,False,2026-09
-2026-09-26,Blinkit,740.0,Groceries,False,2026-09
-2026-09-29,Myntra,2140.0,Shopping,False,2026-09
-2026-09-29,Bookmyshow,760.0,Entertainment,False,2026-09
-2026-09-29,Rahul Transfer,1420.0,Uncategorised,False,2026-09
-2026-09-30,Uber,480.0,Transport,False,2026-09
-2026-09-30,Zomato,600.0,Food,False,2026-09
-2026-10-01,House Rent,8000.0,Bills,False,2026-10
-2026-10-01,Uber,290.0,Transport,False,2026-10
-2026-10-04,Amazon,1800.0,Shopping,False,2026-10
-2026-10-05,Uber,350.0,Transport,False,2026-10
-2026-10-06,Bookmyshow,830.0,Entertainment,False,2026-10
-2026-10-07,Netflix,199.0,Entertainment,False,2026-10
-2026-10-08,Upi Payment 8842,110.0,Uncategorised,False,2026-10
-2026-10-12,Jio Recharge,299.0,Bills,False,2026-10
-2026-10-13,Dominos,490.0,Food,False,2026-10
-2026-10-15,Electricity Bill,1700.0,Bills,False,2026-10
-2026-10-17,Apollo Pharmacy,470.0,Health,False,2026-10
-2026-10-17,Blinkit,330.0,Groceries,False,2026-10
-2026-10-18,Blinkit,870.0,Groceries,False,2026-10
-2026-10-19,Myntra Refund,-900.0,Shopping,True,2026-10
-2026-10-22,Swiggy,220.0,Food,False,2026-10
-2026-10-25,Metro Recharge,400.0,Transport,False,2026-10
-2026-10-27,Petrol Pump,1790.0,Transport,False,2026-10
-2026-10-31,Swiggy,310.0,Food,False,2026-10
-2026-10-31,Zomato,400.0,Food,False,2026-10
-2026-11-01,House Rent,8000.0,Bills,False,2026-11
-2026-11-01,Udemy,540.0,Education,False,2026-11
-2026-11-01,Uber,330.0,Transport,False,2026-11
-2026-11-03,Dominos,560.0,Food,False,2026-11
-2026-11-05,Bigbasket,1610.0,Groceries,False,2026-11
-2026-11-07,Netflix,199.0,Entertainment,False,2026-11
-2026-11-08,Zomato,510.0,Food,False,2026-11
-2026-11-09,Blinkit,870.0,Groceries,False,2026-11
-2026-11-10,Flipkart,1520.0,Shopping,False,2026-11
-2026-11-12,Jio Recharge,299.0,Bills,False,2026-11
-2026-11-15,Electricity Bill,2200.0,Bills,False,2026-11
-2026-11-20,Swiggy,350.0,Food,False,2026-11
-2026-11-25,Dominos,590.0,Food,False,2026-11
+date,description,amount,category
+2026-06-01,House Rent,8000.0,Rent
+2026-06-01,Starbucks,430.0,Food
+2026-06-01,Zomato,200.0,Food
+2026-06-07,Netflix,199.0,Entertainment
+2026-06-08,Metro Recharge,270.0,Travel
+2026-06-08,Uber,440.0,Travel
+2026-06-08,Bookmyshow,820.0,Entertainment
+2026-06-11,Bookmyshow,600.0,Entertainment
+2026-06-12,Jio Recharge,299.0,Bills
+2026-06-15,Electricity Bill,1800.0,Bills
+2026-06-18,Swiggy,270.0,Food
+2026-06-19,Dominos,520.0,Food
+2026-06-19,Local Vendor,680.0,Uncategorised
+2026-06-23,Gift Shop Xyz,250.0,Uncategorised
+2026-06-24,Bigbasket,660.0,Food
+2026-06-25,Swiggy,250.0,Food
+2026-06-26,Metro Recharge,470.0,Travel
+2026-06-30,Zomato,530.0,Food
+2026-07-01,House Rent,8000.0,Rent
+2026-07-01,Uber,370.0,Travel
+2026-07-02,Dominos,670.0,Food
+2026-07-03,Ramesh Vendor,960.0,Uncategorised
+2026-07-03,Cash Note,180.0,Uncategorised
+2026-07-04,Amazon,770.0,Shopping
+2026-07-04,Myntra,1410.0,Shopping
+2026-07-07,Netflix,199.0,Entertainment
+2026-07-09,Flipkart Refund,-1150.0,Shopping
+2026-07-12,Jio Recharge,299.0,Bills
+2026-07-15,Electricity Bill,1000.0,Bills
+2026-07-18,Dominos,430.0,Food
+2026-07-19,Flipkart,1280.0,Shopping
+2026-07-20,Flipkart,1650.0,Shopping
+2026-07-24,Zomato,440.0,Food
+2026-07-24,Uber Refund,-1490.0,Travel
+2026-07-25,Ola,280.0,Travel
+2026-07-28,Dominos,390.0,Food
+2026-07-30,Starbucks,320.0,Food
+2026-07-31,Uber,600.0,Travel
+2026-07-31,Zomato,280.0,Food
+2026-08-01,House Rent,8000.0,Rent
+2026-08-01,Uber,440.0,Travel
+2026-08-03,Amazon Refund,-950.0,Shopping
+2026-08-07,Netflix,199.0,Entertainment
+2026-08-08,Zomato,170.0,Food
+2026-08-12,Jio Recharge,299.0,Bills
+2026-08-12,Blinkit,650.0,Food
+2026-08-13,Starbucks,280.0,Food
+2026-08-13,Amazon,1670.0,Shopping
+2026-08-15,Electricity Bill,2100.0,Bills
+2026-08-15,Blinkit,680.0,Food
+2026-08-18,Blinkit,510.0,Food
+2026-08-20,Dominos,650.0,Food
+2026-08-21,Apollo Pharmacy,610.0,Health
+2026-08-22,Uber,290.0,Travel
+2026-08-22,Ola,300.0,Travel
+2026-08-30,Metro Recharge,400.0,Travel
+2026-08-31,Zomato,590.0,Food
+2026-09-01,House Rent,8000.0,Rent
+2026-09-01,Uber,220.0,Travel
+2026-09-03,Udemy,460.0,Education
+2026-09-04,Misc Cash Payment,730.0,Uncategorised
+2026-09-05,Apollo Pharmacy,480.0,Health
+2026-09-05,Starbucks,400.0,Food
+2026-09-07,Netflix,199.0,Entertainment
+2026-09-07,Amazon,2850.0,Shopping
+2026-09-07,Swiggy Refund,-990.0,Food
+2026-09-08,Bigbasket,1770.0,Food
+2026-09-08,Flipkart,1000.0,Shopping
+2026-09-12,Jio Recharge,299.0,Bills
+2026-09-15,Electricity Bill,900.0,Bills
+2026-09-24,Metro Recharge,380.0,Travel
+2026-09-26,Blinkit,740.0,Food
+2026-09-29,Myntra,2140.0,Shopping
+2026-09-29,Bookmyshow,760.0,Entertainment
+2026-09-29,Rahul Transfer,1420.0,Uncategorised
+2026-09-30,Uber,480.0,Travel
+2026-09-30,Zomato,600.0,Food
+2026-10-01,House Rent,8000.0,Rent
+2026-10-01,Uber,290.0,Travel
+2026-10-04,Amazon,1800.0,Shopping
+2026-10-05,Uber,350.0,Travel
+2026-10-06,Bookmyshow,830.0,Entertainment
+2026-10-07,Netflix,199.0,Entertainment
+2026-10-08,Upi Payment 8842,110.0,Uncategorised
+2026-10-12,Jio Recharge,299.0,Bills
+2026-10-13,Dominos,490.0,Food
+2026-10-15,Electricity Bill,1700.0,Bills
+2026-10-17,Apollo Pharmacy,470.0,Health
+2026-10-17,Blinkit,330.0,Food
+2026-10-18,Blinkit,870.0,Food
+2026-10-19,Myntra Refund,-900.0,Shopping
+2026-10-22,Swiggy,220.0,Food
+2026-10-25,Metro Recharge,400.0,Travel
+2026-10-27,Petrol Pump,1790.0,Travel
+2026-10-31,Swiggy,310.0,Food
+2026-10-31,Zomato,400.0,Food
+2026-11-01,House Rent,8000.0,Rent
+2026-11-01,Udemy,540.0,Education
+2026-11-01,Uber,330.0,Travel
+2026-11-03,Dominos,560.0,Food
+2026-11-05,Bigbasket,1610.0,Food
+2026-11-07,Netflix,199.0,Entertainment
+2026-11-08,Zomato,510.0,Food
+2026-11-09,Blinkit,870.0,Food
+2026-11-10,Flipkart,1520.0,Shopping
+2026-11-12,Jio Recharge,299.0,Bills
+2026-11-15,Electricity Bill,2200.0,Bills
+2026-11-20,Swiggy,350.0,Food
+2026-11-25,Dominos,590.0,Food
