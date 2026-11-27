@@ -2,7 +2,7 @@
 
 A multi-user expense tracker that cleans and categorises expenses, stores them in a database, flags months that go over their spending limit, and shows everything on an interactive dashboard with a month-end forecast.
 
-**🔗 Live app:** <your-streamlit-app-link>
+**🔗 Live app:** https://hclproject-jnggj8t8kpcqckqmgitqm8.streamlit.app/
 **🎥 Demo video:** <your-video-link>
 
 > **Note on tools:** This project uses **Streamlit** for the dashboard (instead of Power BI) and **Supabase / PostgreSQL with PL/pgSQL** for the database and budget check (instead of Oracle with PL/SQL).
@@ -86,42 +86,6 @@ The same function, `clean_expense()`, is the gatekeeper for the sample CSV and f
 | Sep 2026 | 22,838 | **BREACH** (over by ₹4,838) |
 | Oct 2026 | 17,958 | OK (₹42 under) |
 | Nov 2026 (to 25th) | 17,578 | OK so far |
-
-## 7. Database Design
-
-```mermaid
-erDiagram
-    profiles ||--o{ expenses : owns
-    profiles ||--o{ budget : sets
-    category ||--o{ expenses : labels
-
-    profiles {
-        text user_name PK
-        text display_name
-        boolean show_sample
-    }
-    category {
-        text category_name PK
-    }
-    budget {
-        text owner PK, FK
-        text month PK
-        numeric limit_amount
-    }
-    expenses {
-        bigint expense_id PK
-        text owner FK
-        date expense_date
-        text description
-        numeric amount
-        text category FK
-    }
-```
-
-Every expense and limit has an **owner**: `sample` for the demo data, or the user's name. Refunds are stored as negative amounts.
-
-**Views:** `monthly_summary`, `category_monthly`, `month_over_month`.
-**Function:** `check_budget(owner, month)` loops over each month, compares spend with the limit, and returns `OK`, `BREACH`, or `NO LIMIT SET`.
 
 ## 8. KPI Definitions
 
@@ -233,17 +197,6 @@ The app is deployed on **Streamlit Community Cloud** from this GitHub repository
 SUPABASE_URL = "https://your-project-id.supabase.co"
 SUPABASE_KEY = "your-publishable-key"
 ```
-
-## 13. Screenshots
-
-| Screenshot | File |
-|---|---|
-| Login screen | `screenshots/login.png` |
-| Sample dashboard | `screenshots/dashboard_sample.png` |
-| Forecast graph | `screenshots/forecast.png` |
-| Add expense form and duplicate message | `screenshots/add_expense.png` |
-| Budget check result in Supabase | `screenshots/check_budget.png` |
-| Test case queries | `screenshots/test_cases.png` |
 
 ## 14. Insights (sample data)
 
