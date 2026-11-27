@@ -3,7 +3,8 @@
 A multi-user expense tracker that cleans and categorises expenses, stores them in a database, flags months that go over their spending limit, and shows everything on an interactive dashboard with a month-end forecast.
 
 **🔗 Live app:** https://hclproject-jnggj8t8kpcqckqmgitqm8.streamlit.app/
-**🎥 Demo video:** <your-video-link>
+
+**🎥 Demo video:** https://drive.google.com/file/d/1qhsikLkaT2zf4bbYPrYtwnC7EpaZJLFg/view?usp=drivesdk
 
 > **Note on tools:** This project uses **Streamlit** for the dashboard (instead of Power BI) and **Supabase / PostgreSQL with PL/pgSQL** for the database and budget check (instead of Oracle with PL/SQL).
 
@@ -125,21 +126,15 @@ python test_analysis.py
 ├── analysis.py             # Totals, change %, forecast calculations
 ├── clean_data.py           # Cleaning, categorisation, duplicate and limit checks
 ├── db.py                   # Supabase connection and database functions
+├── 02_load.sql
 ├── generate_data.py        # Creates expenses_raw.csv and budget.csv
-├── make_load_sql.py        # Builds 02_load.sql from the clean CSVs
+├── Make_loade.py        # Builds 02_load.sql from the clean CSVs
 ├── test_connection.py      # Checks the database connection
-├── test_analysis.py        # Tests the dashboard calculations
-├── 00_reset.sql            # (optional) deletes old tables and views
-├── 01_ddl.sql              # Creates tables
-├── 02_load.sql             # Loads the sample data
-├── 03_views.sql            # Creates views
-├── 04_queries.sql          # Example queries and test case checks
-├── 05_budget_check.sql     # PL/pgSQL budget check
+├── test_analysis.py        # Tests the dashboard calculations           # (optional) deletes old tables and views
+├── SQL_Queries            # A folder that contains all the sql/pgsql queries to run in Supabase Database editor
 ├── expenses_raw.csv, expenses_clean.csv, budget.csv
 ├── data_quality_report.txt
 ├── requirements.txt
-├── .env.example            # Template for your keys
-└── screenshots/
 ```
 
 ## 11. How to Run Locally
